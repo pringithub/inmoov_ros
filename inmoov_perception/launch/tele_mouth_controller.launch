@@ -1,0 +1,17 @@
+<launch>
+	<include file="$(find inmoov_perception)/launch/display_no_jspub.launch" />
+
+	<!-- Need a camera publishing on an imgmsg topic -->
+	<include file="$(find realsense2_camera)/launch/rs_camera.launch">
+		<arg name="enable_depth" value="false"/>
+		<arg name="enable_infra1" value="false"/>
+		<arg name="enable_infra2" value="false"/>
+        </include> 
+
+	<node pkg="inmoov_perception" type="ros_mouth_openness_detector.py"
+		name="ros_mouth_openness_detector" />
+
+	<node pkg="inmoov_perception" type="ros_move_mouth.py"
+		name="ros_move_mouth"/>
+ 
+</launch>

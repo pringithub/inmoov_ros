@@ -5,3 +5,7 @@
 .pyc
 
 .vscode/
+
+*.swp
+*.swo
+*.mp4

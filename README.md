@@ -1,3 +1,20 @@
+# InMoov ROS Packages
+
+This repo is building additional telepresence functionality into a previous inmoov_ros repo
+
+## Telepresent Jaw Movement
+![](./media/jaw_move_cut.gif)
+
+## Telepresent Eye Movement
+TODO
+
+## Telepresent Limb Movement
+TODO - will use openpose / ros_openpose
+
+
+
+## Forked from alansrobotlab/inmoov_ros
+
 **The xenial-kinetic branch is currently being restructured to make it easier to adapt to custom InMoov designs.**  
 
 Please check the xenial-kinetic milestones to see the direction we're heading and our status
